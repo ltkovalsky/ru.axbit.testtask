@@ -13,8 +13,8 @@ public class MainFrame extends JFrame {
 		setBounds(0, 0, 800, 600);
 		
 		getContentPane().setLayout(new BorderLayout());
-		getContentPane().add(new ButtonPanel(), BorderLayout.PAGE_END);
-		getContentPane().add(new TablePanel(), BorderLayout.CENTER);
+		getContentPane().add(new ButtonPanel(ViewMode.AUTHOR), BorderLayout.PAGE_END);
+		getContentPane().add(new TablePanel(ViewMode.AUTHOR), BorderLayout.CENTER);
 		setVisible(true);
 	}
 	
